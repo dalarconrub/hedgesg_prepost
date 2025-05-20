@@ -96,7 +96,7 @@ El comando genera automáticamente:
 
 David Alarcón  
 Universidad Pablo de Olavide  
-[dalarmar@upo.es](mailto:dalarmar@upo.es)
+[dalarub@upo.es](mailto:dalarmar@upo.es)
 
 ---
 
