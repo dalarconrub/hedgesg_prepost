@@ -1,3 +1,17 @@
-d hedgesg_prepost.ado
-d hedgesg_prepost.sthlp
-d hedgesg_prepost.dlg
+d 'HEDGESG_PREPOST': Cálculo del tamaño del efecto Hedges' g
+d
+d Calcular Hedges' g a partir de medias pre-post en estudios con grupo control
+d
+d Author: David Alarcón
+d Institution: Universidad Pablo de Olavide
+d Email: dalarmar@upo.es
+d Website: https://github.com/dalarconrub/hedgesg_prepost
+d Distribution-Date: 20250520
+d License: MIT
+d Version: 1.0.0
+d
+
+F hedgesg_prepost.ado
+F hedgesg_prepost.dlg
+F hedgesg_prepost.sthlp
+F hedgesg_prepost.pkg
