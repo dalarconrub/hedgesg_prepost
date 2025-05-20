@@ -56,7 +56,10 @@ O lanzar la interfaz gráfica con:
 ```stata
 db hedgesg_prepost
 ```
-
+Puedes obtener información con:
+```stata
+help hedgesg_prepost
+```
 ---
 
 ## 📋 Variables requeridas
