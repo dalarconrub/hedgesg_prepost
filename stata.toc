@@ -1,2 +1,8 @@
-*d hedgesg_prepost.pkg
+d Materials by David Alarcón
+d Universidad Pablo de Olavide
+d dalarub@upo.es
+d https://github.com/dalarconrub/hedgesg_prepost
+
+d 'hedgesg_prepost': cálculo de Hedges' g pre-post para ensayos controlados
+
 p hedgesg_prepost
