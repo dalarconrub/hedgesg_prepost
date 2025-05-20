@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>hedgesg_prepost</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>hedgesg_prepost</h1>
+  <p><strong>Autor:</strong> David Alarcón, Universidad Pablo de Olavide</p>
+
+  <h2>¿Qué es?</h2>
+  <p>Este paquete de Stata calcula el tamaño del efecto Hedges' g corregido, a partir de medias y desviaciones estándar pre-post en estudios con grupo experimental y control.</p>
+
+  <h2>Instalación</h2>
+  <pre><code>net install hedgesg_prepost, from("https://raw.githubusercontent.com/dalarconrub/hedgesg_prepost/main")</code></pre>
+
+  <h2>Uso</h2>
+  <p>Desde la consola:</p>
+  <pre><code>hedgesg_prepost m_pre_exp m_post_exp m_pre_ctrl m_post_ctrl sd_pre_exp sd_pre_ctrl n_exp n_ctrl</code></pre>
+
+  <p>O mediante la interfaz gráfica:</p>
+  <pre><code>db hedgesg_prepost</code></pre>
+
+  <h2>Documentación</h2>
+  <ul>
+    <li><a href="https://raw.githubusercontent.com/dalarconrub/hedgesg_prepost/main/hedgesg_prepost.sthlp">Archivo de ayuda (.sthlp)</a></li>
+    <li><a href="https://github.com/dalarconrub/hedgesg_prepost">Repositorio en GitHub</a></li>
+  </ul>
+
+  <footer>
+    <p>© David Alarcón - 2025</p>
+  </footer>
+</body>
+</html>
