@@ -33,19 +33,68 @@ Si prefieres instalar directamente desde GitHub Pages:
 ```stata
 net install hedgesg_prepost, from("https://dalarconrub.github.io/hedgesg_prepost/")
 ```
-
-> Asegúrate de que los archivos `stata.toc` y `.pkg` estén bien configurados en el repositorio.
-
 ---
 
-## ▶️ Uso básico
+## ▶️ Uso
+
+Una vez instalado, puedes usar el comando directamente:
 
 ```stata
 hedgesg_prepost m_pre_exp m_post_exp m_pre_ctrl m_post_ctrl sd_pre_exp sd_pre_ctrl n_exp n_ctrl
 ```
 
+O lanzar la interfaz gráfica con:
+
 ```stata
 db hedgesg_prepost
 ```
+Puedes obtener información con:
+```stata
+help hedgesg_prepost
+```
+---
+
+## 📋 Variables requeridas
+
+| Parámetro       | Descripción                                      |
+|----------------|--------------------------------------------------|
+| `m_pre_exp`     | Media pre en el grupo experimental               |
+| `m_post_exp`    | Media post en el grupo experimental              |
+| `m_pre_ctrl`    | Media pre en el grupo control                    |
+| `m_post_ctrl`   | Media post en el grupo control                   |
+| `sd_pre_exp`    | Desviación estándar pre en el grupo experimental |
+| `sd_pre_ctrl`   | Desviación estándar pre en el grupo control      |
+| `n_exp`         | Tamaño muestral del grupo experimental           |
+| `n_ctrl`        | Tamaño muestral del grupo control                |
 
 ---
+
+## 📊 Variables generadas
+
+El comando genera automáticamente:
+
+- `delta_exp`, `delta_ctrl`, `diff_delta`
+- `sd_pooled_pre`, `cohen_d_change`, `J`
+- `hedges_g`: el tamaño del efecto final
+- `se_g`: error estándar del efecto
+
+---
+
+## 📚 Referencias
+
+- Morris, S. B. (2008). Estimating effect sizes from pretest-posttest-control group designs. *Organizational Research Methods*, 11(2), 364–386.
+- Botella, J., & Sánchez-Meca, J. (2015). *Meta-análisis en Ciencias Sociales y de la Salud*. Madrid: Síntesis.
+
+---
+
+## 👤 Autor
+
+David Alarcón  
+Universidad Pablo de Olavide  
+[dalarub@upo.es](mailto:dalarmar@upo.es)
+
+---
+
+## 🪪 Licencia
+
+Este proyecto se distribuye bajo la licencia MIT.
