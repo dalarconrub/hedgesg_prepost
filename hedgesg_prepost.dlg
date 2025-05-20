@@ -1,0 +1,61 @@
+/*
+  GUI para hedgesg_prepost - Calcular Hedges' g a partir de datos pre-post
+*/
+
+VERSION 16.0
+
+POSITION . . 440 360
+
+DIALOG main, label("Cálculo de Hedges' g") tabtitle("Main")
+BEGIN
+  TEXT     tx_mpre_exp      10 10 200 ., label("Media pre - Experimental:")
+  VARLIST  ed_mpre_exp      220 10 200 .
+
+  TEXT     tx_mpost_exp     10 +25 200 ., label("Media post - Experimental:")
+  VARLIST  ed_mpost_exp     220 @ 200 .
+
+  TEXT     tx_mpre_ctrl     10 +25 200 ., label("Media pre - Control:")
+  VARLIST  ed_mpre_ctrl     220 @ 200 .
+
+  TEXT     tx_mpost_ctrl    10 +25 200 ., label("Media post - Control:")
+  VARLIST  ed_mpost_ctrl    220 @ 200 .
+
+  TEXT     tx_sd_exp        10 +25 200 ., label("SD pre - Experimental:")
+  VARLIST  ed_sd_exp        220 @ 200 .
+
+  TEXT     tx_sd_ctrl       10 +25 200 ., label("SD pre - Control:")
+  VARLIST  ed_sd_ctrl       220 @ 200 .
+
+  TEXT     tx_nexp          10 +25 200 ., label("N - Experimental:")
+  VARLIST  ed_nexp          220 @ 200 .
+
+  TEXT     tx_nctrl         10 +25 200 ., label("N - Control:")
+  VARLIST  ed_nctrl         220 @ 200 .
+END
+
+OK ok1,      label("OK")
+CANCEL can1, label("Cancelar")
+HELP hlp1,   view("help hedgesg_prepost")
+RESET res1
+COPY copy1
+
+PROGRAM command
+BEGIN
+    put "hedgesg_prepost "
+    require main.ed_mpre_exp
+    put main.ed_mpre_exp " "
+    require main.ed_mpost_exp
+    put main.ed_mpost_exp " "
+    require main.ed_mpre_ctrl
+    put main.ed_mpre_ctrl " "
+    require main.ed_mpost_ctrl
+    put main.ed_mpost_ctrl " "
+    require main.ed_sd_exp
+    put main.ed_sd_exp " "
+    require main.ed_sd_ctrl
+    put main.ed_sd_ctrl " "
+    require main.ed_nexp
+    put main.ed_nexp " "
+    require main.ed_nctrl
+    put main.ed_nctrl
+END
